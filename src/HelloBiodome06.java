@@ -7,9 +7,9 @@ public class HelloBiodome06 {
 			return;
 		}
 		
-		
+		int minLength = Math.min(args[0].length(), args[1].length());
 		int i = 0;
-		while(i<20)
+		while(i<minLength)
 		{
 			if(args[0].charAt(i) != args[1].charAt(i))
 			{
