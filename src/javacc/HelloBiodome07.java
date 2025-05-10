@@ -12,7 +12,7 @@ public class HelloBiodome07 {
 		//input = String.join(args[0], args[1]);
 		//input = input.replace(" ", "");
         String input = String.join("", args).toUpperCase();
-        
+        input = input.replace(" ", "");
 
         if (input.isEmpty()) {
             System.out.println("염기서열이 입력되지 않았습니다.");

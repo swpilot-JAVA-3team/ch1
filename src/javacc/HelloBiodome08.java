@@ -9,6 +9,7 @@ public class HelloBiodome08 {
         }
 
         String input = args[0];
+
 		
 		
 		StringBuilder sb = new StringBuilder();
@@ -16,8 +17,9 @@ public class HelloBiodome08 {
 		for (String word : words) {
 		    sb.append(word).append(" ");
 		}
+	
 		
-		
+		System.out.print("test");
 	}
 
 }
