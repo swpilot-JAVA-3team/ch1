@@ -5,7 +5,6 @@ public class HelloBiodome05 {
 	public static int calcul()
 	{
 		int g,h;
-				
 		for (g=0;g<16;g++)
 		{
 			for(h=0;h<16;h++)
