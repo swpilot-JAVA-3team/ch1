@@ -26,8 +26,8 @@ public class HelloBiodome03 {
         double absPart = abs(rootHumidity - temperature);
         double h = calculateH(muB, absPart, oxygen, pi);
 
-        System.out.println("생명지수 H = " + h);
-        //System.out.printf("생명지수 H = %.2f", h);
+        //System.out.println("생명지수 H = " + h);
+        System.out.printf("생명지수 H = %.2f", h);
     }
 
 	
