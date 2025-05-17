@@ -48,7 +48,7 @@ public class HelloBiodome08 {
 				
 				if (input.charAt(i) == choose_dict.charAt(0)) {   // 입력문장에서 비교할 첫 알파벳과 사전단어의 첫 알파벳을 비교
 					
-					for (int dict_index = 1; dict_index < dict_length; dict_index++) {    // (사전단어의 첫 알파벳은 검사했으므로) 사전단어의 두 번째 알파벳부터 마지막 알파벳까지 반복
+					for (int dict_index = 1; dict_index < dict_length; dict_index++) {    // (사전단어의 첫 알파벳은 검사했으므로) 사전단어의 두 번째 알파벳부터 마지막 알파벳까지만큼 반복
 						if (input.charAt(i + dict_index) == choose_dict.charAt(dict_index)) {  // 알파벳 자리수마다 서로 동일한 알파벳인지 검사
 							
 							correct_count++;
