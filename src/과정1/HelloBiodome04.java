@@ -8,7 +8,7 @@ public class HelloBiodome04 {
 		// condition 1: temperature 2: moisture 3: oxygen
 		
 		// temp 확인
-		if(condition==1)
+		if(condition==1) 
 		{
 			if(value>=10&&value<27.5)
 				return true;
@@ -66,7 +66,7 @@ public class HelloBiodome04 {
 				System.exit(0);
 			}
 			
-			// 다 정상범위 일시
+			// 다 정상범위 일시Z
 			System.out.println("-> 생명의 나무는 안정적인 상태입니다 :)");
 			
 		}catch(NumberFormatException e)
