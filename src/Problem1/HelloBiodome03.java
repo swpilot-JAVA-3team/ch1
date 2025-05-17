@@ -71,7 +71,7 @@ public class HelloBiodome03 {
 		
 		/*바빌로니아 제곱근 계산*/
 		double sqrt_h = BLOsqrt(humid);
-		/*double sqrt_h = Math.sqrt(humid);*/
+		//double sqrt_h = Math.sqrt(humid);
 		
 		double x  = sqrt_h - t; double H;
 		

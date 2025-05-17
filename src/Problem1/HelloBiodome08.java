@@ -14,15 +14,15 @@ public class HelloBiodome08 {
 			    "we", "isn’t", "there", "a", "your", "any", "thanks", "the", "for", "solution", "can", "?"
 			}; 
 		
-		
+		//글자수 내림차순으로 정렬
 		Arrays.sort(dic, Comparator.comparingInt(String::length));
 		List<String> list = Arrays.asList(dic);
 		Collections.reverse(list);
 		dic = list.toArray(new String[0]);
 		StringBuilder result = new StringBuilder();
+		
+		//단어 dic에서 뽑아서 비교
 		int i = 0;
-		
-		
 		while(i < str.length())
 		{
 			boolean flag = false;
@@ -36,7 +36,7 @@ public class HelloBiodome08 {
 					{
 						if(word.equals("?"))
 						{
-							result.append("?");
+							//result.append("?");
 						}
 						else {
 							result.append(word).append(" ");
@@ -73,6 +73,10 @@ public class HelloBiodome08 {
             result.setLength(result.length() - 1);  // 마지막 공백 제거
             result.append(".");
         }
+		else {
+			result.setLength(result.length() - 1);
+			result.append("?");
+		}
 		System.out.println(result.toString());
 	}
 

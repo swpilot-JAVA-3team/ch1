@@ -19,8 +19,8 @@ public class HelloBiodome02 {
 						return;
 					}
 				}
-
 			}
+			
 			int solar, wind, earth;
 			
 			solar = Integer.parseInt(args[0]); 

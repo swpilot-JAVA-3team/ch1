@@ -44,8 +44,10 @@ public class HelloBiodome07 {
 		}
 		
 		String input = "";
-		if(args.length>1) {
-			
+		if (args.length == 1) {//공백없음 입력값 한 개 
+		    input = args[0];
+		}
+		else if(args.length>1) {//공백제거
 			for(int i = 0; i<args.length; i++)
 			{
 				input += args[i];

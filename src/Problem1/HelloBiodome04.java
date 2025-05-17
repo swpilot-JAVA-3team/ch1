@@ -4,17 +4,17 @@ public class HelloBiodome04 {
 	
 	private static final double P = 3.14;
 	private static final double u = 0.415;
-	static double t, humid, oxygen, id;
+	private static double t, humid, oxygen, id;
 	
 	public static boolean isSafe() {
 		
 		if (t < 10 || t> 27.5) {
 			id = 0;
 			return false;}
-		if(40>=humid || humid>=60) {
+		if(40<=humid && humid<=60) {
 			id = 1;
 			return false;}
-		if(19.5 > oxygen || oxygen >23.5 ) {
+		if(19.5 > oxygen || oxygen > 23.5 ) {
 			id = 2;
 			return false;}
 		
@@ -27,6 +27,7 @@ public class HelloBiodome04 {
 		
 		if (args.length < 3) {
 			System.out.println("enter again");
+			return;
 		}
 		
 		for (String tmp: args){
@@ -61,7 +62,6 @@ public class HelloBiodome04 {
 		oxygen = Double.parseDouble(args[2]);
 		
 		/*함수 써서 안정된 상태인지 체크*/
-		
 		if(!(isSafe())) /*not safe state*/
 		{
 			if(id ==0)
