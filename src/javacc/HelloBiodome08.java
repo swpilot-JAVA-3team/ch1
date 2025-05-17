@@ -58,6 +58,11 @@ public class HelloBiodome08 {
 						}
 					}
 					if (dict_length == correct_count) {   // 입력문장과 사전단어의 알파벳이 처음부터 끝까지 모두 동일하면
+						if (stringBuild.length() > 0 && stringBuild.charAt(stringBuild.length() - 1) != ' ' 
+							    && !choose_dict.equals("?")) {   // 바로 앞 자리가 공백이 아니면 공백 추가(사전에 없는 단어는 공백을 추가하지 않으므로)
+							stringBuild.append(" ");
+						}
+						
 						stringBuild.append(choose_dict);
 						i += dict_length;   // 사전단어 글자수만큼 입력문장에서 검사할 인덱스를 증감
 						found = true;
