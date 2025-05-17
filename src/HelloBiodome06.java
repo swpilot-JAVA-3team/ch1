@@ -7,20 +7,24 @@ public class HelloBiodome06 {
 			return;
 		}
 		
-		int minLength = Math.min(args[0].length(), args[1].length());
+		/*toCharArray: string을 char배열로 반환*/
+		char[] str1 = args[0].toCharArray();
+		char[] str2 = args[1].toCharArray();
 		int i = 0;
-		while(i<minLength)
+		
+		if(str1.length != str2.length) {System.out.println("those are not identical"); System.exit(0);}
+		
+		while(i<str1.length)
 		{
-			if(args[0].charAt(i) != args[1].charAt(i))
-			{
-				System.out.println("DNA is not identical");
-				return ;
+			if(str1[i]!= str2[i]) {
+				System.out.println("Those are not identical DNA");
+				System.exit(0);
 			}
 			i++;
 		}
 		
 		System.out.println("identical DNA");
-		return ;
+		System.exit(0);
 		
 	}
 }

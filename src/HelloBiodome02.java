@@ -7,8 +7,7 @@ public class HelloBiodome02 {
 		}
 		
 		else
-		{
-			
+		{	
 			/*숫자인지 확인*/
 			for (String tmp: args){
 				
