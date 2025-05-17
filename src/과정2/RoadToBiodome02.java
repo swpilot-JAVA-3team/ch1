@@ -64,6 +64,7 @@ public class RoadToBiodome02 {
 			}
 			push(' ');
 		}
+		pop(); // 마지막 빈칸 제거
 		char x;
 		while((x=pop())!='!')
 		{
