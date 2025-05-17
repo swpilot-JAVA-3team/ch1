@@ -1,9 +1,7 @@
+package Problem1;
 import java.util.*;
 
 public class HelloBiodome08 {
-	
-	
-	
 	
 	public static void main(String[] args) {
 		if (args.length < 1) {
@@ -13,10 +11,14 @@ public class HelloBiodome08 {
 		String str = args[0];
 		String[] dic = {
 			    "hello", "where", "this", "biodome", "help", "tree", "new", "is", "problem", "please", "need",
-			    "we", "isn’t", "there", "a", "your", "any", "thanks", "the", "for", "solution", "can", "?", "you"
+			    "we", "isn’t", "there", "a", "your", "any", "thanks", "the", "for", "solution", "can", "?"
 			}; 
-		Arrays.sort(dic,Comparator.reverseOrder());
 		
+		
+		Arrays.sort(dic, Comparator.comparingInt(String::length));
+		List<String> list = Arrays.asList(dic);
+		Collections.reverse(list);
+		dic = list.toArray(new String[0]);
 		StringBuilder result = new StringBuilder();
 		int i = 0;
 		
@@ -49,6 +51,8 @@ public class HelloBiodome08 {
 			 if (!flag) {
 	                // 단어 사전에 없는 글자 → 붙이되 띄어쓰기 구분되도록 처리
 	                StringBuilder unknown = new StringBuilder();
+	                unknown.append(str.charAt(i));
+	                i++;
 	                while (i < str.length()) {
 	                    boolean found = false;
 	                    for (String word : dic) {
