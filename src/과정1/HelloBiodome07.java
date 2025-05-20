@@ -12,6 +12,14 @@ public class HelloBiodome07 {
 		for(int i=0;i<length;i++)
 		{
 			char ch = line.charAt(i);
+			if(ch=='C'||ch=='Y'||ch=='J'||ch=='E'||ch=='H')
+			{
+				System.out.println("-> 염기서열은 C, J, H, E, Y 다섯가지로만 입력됩니다. "
+						+ "확인하고 다시 입력해주세요");
+				System.exit(1);
+			}
+			
+			
 			if(current!=ch) // 다른 문자일 경우
 			{
 				if(count!=0)  // 앞에 다른 문자가 있었을 경우
