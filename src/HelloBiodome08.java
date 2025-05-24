@@ -14,6 +14,7 @@ public class HelloBiodome08 {
                 }
             }
         }
+
         StringBuilder result = new StringBuilder();
         int flag = 0;
         int notwords = 0;

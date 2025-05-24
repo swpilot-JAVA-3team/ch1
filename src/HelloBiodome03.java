@@ -5,7 +5,7 @@ public class HelloBiodome03 {
             System.exit(1);
         }
 
-        for(String i : args){
+        for (String i : args) {
             try {
                 double n = Double.valueOf(i);
             } catch (NumberFormatException e) {
