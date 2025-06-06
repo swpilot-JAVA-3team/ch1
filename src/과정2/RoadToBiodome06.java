@@ -46,19 +46,6 @@ public class RoadToBiodome06 {
 		Arrays.sort(inputInt1);
 		Arrays.sort(inputInt2);
 		
-	
-//		for(int i=0;i<n;i++)
-//		{	
-//			System.out.print(inputInt1[i]+" ");
-//		}
-//		System.out.println(n);
-//		for(int i=0;i<m;i++)
-//		{	
-//			System.out.print(inputInt2[i]+" ");
-//		}
-//
-//		System.out.println(m);
-
 		double Median = findMedianSortedArrays(inputInt1,inputInt2,n,m);
 		System.out.printf("Medain : %.1f  ",Median);
 		double Mean = findMeanSortedArrays(inputInt1,inputInt2,n,m);

@@ -2,7 +2,6 @@ package 과정2;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Comparator;
 
 public class RoadToBiodome07 {
 	public static void main(String[] args)
