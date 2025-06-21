@@ -1,7 +1,6 @@
 package subject2;
 
 public class RoadToBiodome01 {
-
 	public static void main(String[] args) {
 		if (args.length == 0) {
             System.out.println("입력된 값이 없습니다.");
@@ -16,7 +15,6 @@ public class RoadToBiodome01 {
             if (i == 0) {
                 value = value.replace("[", "");
             }
-
             if (i == args.length - 1) {
                 value = value.replace("]", "");
             }
